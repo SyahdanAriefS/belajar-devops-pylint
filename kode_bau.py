@@ -1,10 +1,13 @@
+"""
+Modul ini memproses data berdasarkan kondisi boolean dan daftar nilai.
+"""
+
 X_VALUE = 10
 
-def process_data(val_a, val_b, val_c, val_d, list_e, val_f):
+def process_data(val_a, val_b, val_c, list_e, val_f):
     """
     Fungsi kalkulasi sederhana berdasarkan kondisi boolean dan validasi data.
     """
-
     var_l = 1
     var_o = 0
 
@@ -21,4 +24,5 @@ def process_data(val_a, val_b, val_c, val_d, list_e, val_f):
     return None
 
 if __name__ == "__main__":
-    process_data(True, False, None, 1, [2], 3)
+    # Karena val_d dihapus, pemanggilan fungsi kini hanya menggunakan 5 argumen
+    process_data(True, False, None, [2], 3)
